@@ -1,4 +1,4 @@
-# Aplicativo Despesas
+# Aplicativo Divisão de Despesas
 ## Do que se trata?
 <p>Aplicativo usado para a divisão de despesas entre moradores de uma república.</p>
 
