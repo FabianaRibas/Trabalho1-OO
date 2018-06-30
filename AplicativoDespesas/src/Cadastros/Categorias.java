@@ -1,34 +1,33 @@
-package Cadastros;
+
+import java.util.ArrayList;
 
 public class Categorias {
-
-	String descricao;
-	String subcategoria;
+	private String nome;
+	private ArrayList<String> subCategoria = new ArrayList<String>();
 	
-	Categorias (String descricao, String subcategoria)
-	{
-		this.descricao = descricao;
-		this.subcategoria = subcategoria;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public String getSubcategoria() {
-		return subcategoria;
+	public Categorias(String nome) {
+		this.nome = nome;
 	}
 	
-	public String toString()
-	{
-		String info = "";
-		info += "Categoria: " + descricao + '\n';
-		info += "Subcategoria: " + subcategoria + '\n';
-		return info;
+	public Categorias(String nome, String nomeSubCategoria) {
+		this.nome = nome;
+		this.subCategoria.add(nomeSubCategoria);
+	}
+	
+	public boolean checkIfVazia() {
+		if(this.subCategoria.size() == 0)
+			return true;
+		else
+			return false;
 	}
 
-	public Categorias() {
-		super();
+	public String getNome() {
+		return nome;
+	}
+
+	public ArrayList<String> getSubCategoria() {
+		
+		return subCategoria;
 	}
 	
 	

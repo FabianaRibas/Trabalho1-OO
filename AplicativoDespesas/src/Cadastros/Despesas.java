@@ -1,35 +1,25 @@
-package Cadastros;
 
-public class Despesas extends Categorias {
-
-	String descricaoDespesa;
-	float valorDespesa;
+public class Despesas {
+	private Categorias categoria;
+	private String descricao;
+	private double valor;
 	
-	Despesas (String descricaoDespesa, float valorDespesa, String subcategoria, String descricao)
-	{
+	public Despesas(String descricao, Categorias categoria, double valor) {
+		this.categoria = categoria;
 		this.descricao = descricao;
-		this.descricaoDespesa = descricaoDespesa;
-		this.subcategoria = subcategoria;
-		this.valorDespesa = valorDespesa;
-		
+		this.valor = valor;
 	}
 
-	public String getDescricaoDespesa() {
-		return descricaoDespesa;
+	public Categorias getCategoria() {
+		return categoria;
 	}
 
-	public float getValorDespesa() {
-		return valorDespesa;
+	public String getDescricao() {
+		return descricao;
 	}
-	
-	public String toString()
-	{
-		String info = "";
-		info += "Descricao Despesa: " + descricaoDespesa + '\n';
-		info += "valor da Despesa: " + valorDespesa + '\n';
-		return info;
+
+	public double getValor() {
+		return valor;
 	}
-	
-	
 	
 }

@@ -1,18 +1,13 @@
-package Cadastros;
 
 public class Pessoa {
+	private String nome;
+	private String email;
+	private double rendimentos;
 	
-	String nome;
-	String email;
-	float rendimento;
-	float totalPagar;
-	
-	Pessoa(String nome, String email, float rendimento, float totalPagar)
-	{
+	public Pessoa(String nome, String email, double rendimentos) {
 		this.nome = nome;
 		this.email = email;
-		this.rendimento = rendimento;
-		this.totalPagar = totalPagar;
+		this.rendimentos = rendimentos;
 	}
 
 	public String getNome() {
@@ -23,24 +18,8 @@ public class Pessoa {
 		return email;
 	}
 
-	public float getRendimento() {
-		return rendimento;
+	public double getRendimentos() {
+		return rendimentos;
 	}
 	
-	
-	public float getTotalPagar() {
-		return totalPagar;
-	}
-
-	public String toString()
-	{
-		String info = "";
-		info += "Nome: " + nome + '\n';
-		info += "Email: " + email + '\n';
-		info += "Rendimento: " + rendimento + '\n';
-		info += "Total a Pagar: " + totalPagar + '\n';
-		return info;
-		
-	}
-
 }
