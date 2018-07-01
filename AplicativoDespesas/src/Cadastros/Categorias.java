@@ -1,34 +1,32 @@
-
-import java.util.ArrayList;
+//import java.util.LinkedList;
+//import java.util.List;
 
 public class Categorias {
 	private String nome;
-	private ArrayList<String> subCategoria = new ArrayList<String>();
+	private String subcategoria;
 	
-	public Categorias(String nome) {
+	
+	public Categorias(String nome, String subcategoria) {
 		this.nome = nome;
-	}
-	
-	public Categorias(String nome, String nomeSubCategoria) {
-		this.nome = nome;
-		this.subCategoria.add(nomeSubCategoria);
-	}
-	
-	public boolean checkIfVazia() {
-		if(this.subCategoria.size() == 0)
-			return true;
-		else
-			return false;
+		this.subcategoria = subcategoria;
 	}
 
 	public String getNome() {
 		return nome;
 	}
+	
 
-	public ArrayList<String> getSubCategoria() {
-		
-		return subCategoria;
+	public String getSubcategoria() {
+		return subcategoria;
 	}
+
 	
-	
+
+	/*public void addDispesa(Despesas D)
+	{
+		D.setCategoria(this);
+		ListaDespesas.add(D);
+	}*/
+
+
 }

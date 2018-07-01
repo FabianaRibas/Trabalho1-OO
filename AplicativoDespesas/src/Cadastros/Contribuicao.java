@@ -1,17 +1,20 @@
 
+public class Contribuicao {
 
-public class Contribuicao extends Despesas{
+	float totalDespesas;
 	
-	public Contribuicao(String descricao, Categorias categoria, double valor) {
-		super(descricao, categoria, valor);
+	public float CalcularContribuicaoProporcional()
+	{
+		
+		return totalDespesas;
+		
 	}
 	
-	float totalDeDespesas;
-
-	public float pegarTotalDeDespesas()
+	public float CalcularContribuicaoIgualitaria()
 	{
-		totalDeDespesas += super.getValor();
+		int total = 100;
 		
-		return totalDeDespesas;}
-	
+		return totalDespesas;
+		
+	}
 }
