@@ -11,15 +11,6 @@ public class Despesas {
 		this.valor = valor;
 	}
 
-
-	/*public void setCategoria(Categorias categoria) {
-		this.categoria = categoria;
-	}
-
-	public Categorias getCategoria() {
-		return categoria;
-	}*/
-
 	public String getDescricao() {
 		return descricao;
 	}

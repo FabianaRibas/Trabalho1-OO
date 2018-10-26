@@ -14,7 +14,6 @@ public class Morador {
 		this.nome = nome;
 		this.email = email;
 		this.rendimentos = rendimentos;
-		//ListaMorador = new LinkedList<Morador>();
 	}
 	
 	public String toString() {
