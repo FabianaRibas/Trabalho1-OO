@@ -20,13 +20,4 @@ public class Categorias {
 		return subcategoria;
 	}
 
-	
-
-	/*public void addDispesa(Despesas D)
-	{
-		D.setCategoria(this);
-		ListaDespesas.add(D);
-	}*/
-
-
 }

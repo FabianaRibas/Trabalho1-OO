@@ -14,7 +14,7 @@
 </ul>
 
 ## Desenvolvedoras
-Fabiana Ribas  
+Fabiana Luiza V. P. Ribas  
 Gabrielle Ribeiro  
 
 

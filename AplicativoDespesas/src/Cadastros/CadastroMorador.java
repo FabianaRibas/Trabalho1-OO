@@ -18,8 +18,9 @@ public class CadastroMorador {
 	public boolean cadastrarMorador(Morador M) 
 	{
 		boolean resposta = false;
-		if (ListaMorador == null) 
+		if (ListaMorador == null){
 			ListaMorador = new LinkedList<Morador>();
+		}
 		resposta = ListaMorador.add(M);
 		return resposta;
 	}
@@ -31,9 +32,7 @@ public class CadastroMorador {
 		
 		while (pesquisa.hasNext()) {
 			Morador M = pesquisa.next();
-			if (M.getNome().equalsIgnoreCase(nome) &&
-				M.getEmail().equalsIgnoreCase(email)
-					) 
+			if (M.getNome().equalsIgnoreCase(nome) && M.getEmail().equalsIgnoreCase(email)) 
 				resposta = M;
 		}
 		return resposta;
@@ -42,8 +41,9 @@ public class CadastroMorador {
 	public boolean RemoverMorador(Morador m) 
 	{
 		boolean opcao = false;
-		if (ListaMorador.contains(m))
+		if (ListaMorador.contains(m)){
 			opcao = ListaMorador.remove(m);
+		}
 		return opcao;
 	}
 
